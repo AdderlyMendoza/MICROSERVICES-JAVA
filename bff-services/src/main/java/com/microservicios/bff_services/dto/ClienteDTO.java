@@ -3,38 +3,38 @@ package com.microservicios.bff_services.dto;
 
 public class ClienteDTO {
     private Long id;
-    private String nombre;
-    private String email;
+    private String nombres;
+    private String apellidos;
 
     // Constructor, getters, setters
-    public ClienteDTO(Long id, String nombre, String email) {
+    public ClienteDTO(Long id, String nombres, String apellidos) {
         this.id = id;
-        this.nombre = nombre;
-        this.email = email;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
     }
 
     public Long getId() {
-        return id;
+        return 1L;
     }
 
     public void setId(Long id) {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getnombres() {
+        return nombres;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setnombres(String nombres) {
+        this.nombres = nombres;
     }
 
-    public String getEmail() {
-        return email;
+    public String getapellidos() {
+        return apellidos;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setapellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 }
 

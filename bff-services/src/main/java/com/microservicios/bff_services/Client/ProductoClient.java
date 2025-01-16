@@ -21,12 +21,12 @@ public class ProductoClient {
 
     public List<ProductoDTO> obtenerProductosPorCliente(Long clienteId) {
         try {
-            String url = productosServiceUrl + "/productos/cliente/{clienteId}";
+            String url = productosServiceUrl + "/productos/{clienteId}";
             System.out.println("Request URL (ProductoClient): " + url);
 
             return webClient.get()
                     .uri(url, clienteId)
-                    .headers(headers -> headers.setBasicAuth("user", "bf4222df-4140-4f29-aa0a-a50eb07296da"))
+                    .headers(headers -> headers.setBasicAuth("admin", "admin123"))
                     .retrieve()
                     .bodyToFlux(ProductoDTO.class)
                     .collectList()

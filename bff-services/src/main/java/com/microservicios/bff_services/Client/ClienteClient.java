@@ -27,7 +27,7 @@ public class ClienteClient {
                     .headers(headers -> headers.setBasicAuth("admin", "admin123"))
                     .retrieve()
                     .bodyToMono(ClienteDTO.class)
-                    .block(); 
+                    .block();
         } catch (WebClientResponseException e) {
             System.err.println("Error al obtener cliente: " + e.getMessage());
             throw new RuntimeException("Error al obtener cliente", e);
