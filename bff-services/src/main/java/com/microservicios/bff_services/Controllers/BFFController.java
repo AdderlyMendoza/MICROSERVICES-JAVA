@@ -50,7 +50,7 @@ public class BFFController {
             // Imprimir el nombre de cada producto
             if (productos != null && !productos.isEmpty()) {
                 for (ProductoDTO producto : productos) {
-                    System.out.println("Tipo del producto: " + producto.gettipo_producto());
+                    System.out.println("Tipo del producto: " + producto.gettipoProducto());
                     System.out.println("Saldo del producto: " + producto.getsaldo());
                 }
             } else {

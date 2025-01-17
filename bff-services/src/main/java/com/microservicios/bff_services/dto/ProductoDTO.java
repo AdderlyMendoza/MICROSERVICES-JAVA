@@ -2,30 +2,30 @@ package com.microservicios.bff_services.dto;
 
 public class ProductoDTO {
     private Long id;
-    private String tipo_producto;
+    private String tipoProducto;
     private Double saldo;
 
     // Constructor, getters, setters
-    public ProductoDTO(Long id, String tipo_producto, Double saldo) {
+    public ProductoDTO(Long id, String tipoProducto, Double saldo) {
         this.id = id;
-        this.tipo_producto = tipo_producto;
+        this.tipoProducto = tipoProducto;
         this.saldo = saldo;
     }
 
     public Long getId() {
-        return id;
+        return 1L;
     }
 
     public void setId(Long id) {
         this.id = id;
     }
 
-    public String gettipo_producto() {
-        return tipo_producto;
+    public String gettipoProducto() {
+        return tipoProducto;
     }
 
-    public void settipo_producto(String tipo_producto) {
-        this.tipo_producto = tipo_producto;
+    public void settipoProducto(String tipoProducto) {
+        this.tipoProducto = tipoProducto;
     }
 
     public Double getsaldo() {
